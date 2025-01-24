@@ -1,0 +1,67 @@
+@import "@variables";
+
+main {
+  border: 1px solid red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: $font-global;
+
+  //   .logo-slide {
+  //     white-space: nowrap;
+  //   }
+  .logos {
+    overflow: hidden;
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+    white-space: nowrap;
+    position: relative;
+
+    &:hover .logo-slide {
+      animation-play-state: paused;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 180px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to left, rgb(255, 255, 255, 0), #fff);
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to right, rgb(255, 255, 255, 0), #fff);
+    }
+
+    .logo-slide {
+      display: inline-block;
+      animation: 35s slide infinite linear;
+      img {
+        height: 120px;
+        margin: 0 40px;
+      }
+    }
+  }
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
