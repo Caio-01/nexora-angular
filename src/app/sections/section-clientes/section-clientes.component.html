@@ -1,0 +1,12 @@
+<!-- Section Clientes -->
+<main>
+  <app-title-sections title="Conheça nossos Clientes"> </app-title-sections>
+  <div class="logos">
+    <div class="logo-slide">
+      <img *ngFor="let logo of logos" [src]="logo.img" [alt]="logo.alt" />
+    </div>
+    <div class="logo-slide">
+      <img *ngFor="let logo of logos" [src]="logo.img" [alt]="logo.alt" />
+    </div>
+  </div>
+</main>

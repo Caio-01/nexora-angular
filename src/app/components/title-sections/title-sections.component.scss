@@ -1,0 +1,17 @@
+@import "@variables";
+
+.titleDiv {
+  h1 {
+    color: $color-text;
+    font-size: 4rem;
+    width: 100%;
+    @media screen and (max-width: 1000px) {
+      font-size: 3em;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.9em;
+      text-align: center;
+    }
+  }
+}
