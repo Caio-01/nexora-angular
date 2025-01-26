@@ -5,9 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SectionClientesComponent } from './sections/section-clientes/section-clientes.component';
 import { TitleSectionsComponent } from './components/title-sections/title-sections.component';
+import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
 
 @NgModule({
-  declarations: [AppComponent, SectionClientesComponent, TitleSectionsComponent],
+  declarations: [
+    AppComponent,
+    SectionClientesComponent,
+    TitleSectionsComponent,
+    SectionServicosComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

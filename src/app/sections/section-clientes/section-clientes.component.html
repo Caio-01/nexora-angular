@@ -1,6 +1,6 @@
 <!-- Section Clientes -->
 <main>
-  <app-title-sections title="Conheça nossos Clientes"> </app-title-sections>
+  <app-title-sections title="Clientes"> </app-title-sections>
   <div class="logos">
     <div class="logo-slide">
       <img *ngFor="let logo of logos" [src]="logo.img" [alt]="logo.alt" />
@@ -9,4 +9,12 @@
       <img *ngFor="let logo of logos" [src]="logo.img" [alt]="logo.alt" />
     </div>
   </div>
+
+  <svg class="divSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#0F7221"
+      fill-opacity="1"
+      d="M0,192L720,288L1440,256L1440,320L720,320L0,320Z"
+    ></path>
+  </svg>
 </main>

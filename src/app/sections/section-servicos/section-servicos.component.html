@@ -1,0 +1,16 @@
+<!-- Section Serviços -->
+<main>
+  <app-title-sections title="Nossos Serviços"> </app-title-sections>
+
+  <div class="cardContainer">
+    <div *ngFor="let card of cards" class="card">
+      <div class="cardIconTitle">
+        <span class="material-symbols-outlined"> {{ card.icon }} </span>
+        <h2>{{ card.title }}</h2>
+      </div>
+      <p>
+        {{ card.paragraph }}
+      </p>
+    </div>
+  </div>
+</main>
