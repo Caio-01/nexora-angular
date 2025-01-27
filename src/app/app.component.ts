@@ -6,17 +6,17 @@ import { gsap } from 'gsap';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements AfterViewInit {
+export class AppComponent {
   title = 'landing-page';
 
-  @ViewChild('box', { static: true })
-  box!: ElementRef<HTMLDivElement>;
+  // @ViewChild('box', { static: true })
+  // box!: ElementRef<HTMLDivElement>;
 
-  ngAfterViewInit(): void {
-    gsap.fromTo(
-      this.box.nativeElement,
-      { opacity: 0 },
-      { opacity: 1, duration: 5 }
-    );
-  }
+  // ngAfterViewInit(): void {
+  //   gsap.fromTo(
+  //     this.box.nativeElement,
+  //     { opacity: 0 },
+  //     { opacity: 1, duration: 5 }
+  //   );
+  // }
 }
