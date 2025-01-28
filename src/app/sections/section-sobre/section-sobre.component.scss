@@ -1,0 +1,69 @@
+@import "@variables";
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid red;
+
+  .divContainerTitle {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 1em;
+    flex-direction: row;
+    position: relative;
+
+    .divTitle {
+      margin-left: 25%;
+      background: linear-gradient(
+        207deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgb(245, 245, 245) 100%
+      );
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 1em;
+      width: 560px;
+      height: 500px;
+      border-radius: 10px;
+      padding: 1.2em 4em;
+      border: 2px solid #35353552;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+      }
+    }
+
+    .divImgSobre {
+      position: absolute;
+      content: "";
+      bottom: 8em;
+      right: 20em;
+      z-index: 1;
+      width: 560px;
+      height: 420px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

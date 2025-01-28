@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SectionClientesComponent } from './sections/section-clientes/section-clientes.component';
 import { TitleSectionsComponent } from './components/title-sections/title-sections.component';
 import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
+import { SectionSobreComponent } from './sections/section-sobre/section-sobre.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SectionServicosComponent } from './sections/section-servicos/section-se
     SectionClientesComponent,
     TitleSectionsComponent,
     SectionServicosComponent,
+    SectionSobreComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
