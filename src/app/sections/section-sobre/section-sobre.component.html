@@ -1,24 +1,32 @@
 <main>
-  <app-title-sections title="Sobre"> </app-title-sections>
-
-  <div class="divContainerTitle">
-    <div class="divTitle">
-      <h3>Empresa</h3>
-      <h1>Quem Somos</h1>
-      <p>
-        Somos uma empresa inovadora, dedicada a oferecer soluções inteligentes
-        para o setor da construção civil. Nosso compromisso vai além da obra em
-        si, pois consideramos os impactos ambientais e sociais em cada projeto.
-        Contamos com uma equipe altamente capacitada e em constante atualização,
-        para acompanhar as últimas tendências tecnológicas. Com a expertise do
-        nosso time técnico, transformamos seu sonho em realidade, sempre
-        buscando otimizar custos, garantir a qualidade e cumprir rigorosamente
-        os prazos estabelecidos.
-      </p>
+  <div class="aboutTitle">
+    <h1>SOBRE</h1>
+  </div>
+  <div class="aboutContainer">
+    <div class="aboutImgContainer">
+      <img class="imgAbout" src="assets/imgSobre.jpg" alt="sobre" />
+      <img class="svgAbout" src="assets/svgSobre.svg" alt="svgSobre" />
     </div>
-
-    <div class="divImgSobre">
-      <img src="assets/imgSobre.jpg" alt="" />
+    <div class="aboutContainerText">
+      <div class="aboutText">
+        <h1>MSantos Construções</h1>
+        <p>
+          Somos uma empresa inovadora no setor da construção civil, atuando em
+          projetos para o setor imobiliário e empresas privadas e públicas de
+          destaque. Com uma equipe capacitada, oferecemos soluções inteligentes
+          que respeitam os impactos ambientais e sociais. Utilizamos tecnologias
+          avançadas para otimizar custos, garantir qualidade e cumprir prazos,
+          entregando empreendimentos com eficiência.
+        </p>
+      </div>
+      <div class="aboutIconsContainer">
+        <div *ngFor="let icon of icons" class="aboutIconText">
+          <div class="aboutIcon">
+            <span class="material-symbols-outlined">{{ icon.svg }}</span>
+          </div>
+          <h3>{{ icon.textIcon }}</h3>
+        </div>
+      </div>
     </div>
   </div>
 </main>
