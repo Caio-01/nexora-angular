@@ -14,9 +14,9 @@ export class SectionSobreComponent {
 
   // Lista de Icons
   icons: Array<Icons> = [
-    { svg: 'groups', textIcon: 'Equipe Especializada' },
-    { svg: 'engineering', textIcon: 'Soluções Técnicas' },
-    { svg: 'psychology', textIcon: 'Vasta Experiência' },
+    { svg: 'groups', textIcon: 'Equipe Qualificada' },
+    { svg: 'engineering', textIcon: 'Soluções Eficazes' },
+    { svg: 'psychology', textIcon: 'Ampla Experiência' },
     { svg: 'trending_up', textIcon: 'Qualidade e Precisão' },
   ];
 }
