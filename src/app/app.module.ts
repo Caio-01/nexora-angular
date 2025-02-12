@@ -7,6 +7,7 @@ import { SectionClientesComponent } from './sections/section-clientes/section-cl
 import { TitleSectionsComponent } from './components/title-sections/title-sections.component';
 import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
 import { SectionSobreComponent } from './sections/section-sobre/section-sobre.component';
+import { SectionValoresComponent } from './sections/section-valores/section-valores.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SectionSobreComponent } from './sections/section-sobre/section-sobre.co
     TitleSectionsComponent,
     SectionServicosComponent,
     SectionSobreComponent,
+    SectionValoresComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
