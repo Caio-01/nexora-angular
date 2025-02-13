@@ -1,5 +1,12 @@
 <main>
-    <div class="valoresTitle">
-
+  <div class="svgValores">
+    <img src="assets/imgValores.jpg" alt="valoresSvg" />
+  </div>
+  <div class="containerCardValores">
+    <div *ngFor="let card of cardValores" class="cardValores">
+      <span class="material-symbols-outlined"> {{ card.icon }} </span>
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.description }}</p>
     </div>
+  </div>
 </main>
