@@ -8,6 +8,8 @@ import { TitleSectionsComponent } from './components/title-sections/title-sectio
 import { SectionServicosComponent } from './sections/section-servicos/section-servicos.component';
 import { SectionSobreComponent } from './sections/section-sobre/section-sobre.component';
 import { SectionValoresComponent } from './sections/section-valores/section-valores.component';
+import { SectionWelcomeComponent } from './sections/section-welcome/section-welcome.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { SectionValoresComponent } from './sections/section-valores/section-valo
     SectionServicosComponent,
     SectionSobreComponent,
     SectionValoresComponent,
+    SectionWelcomeComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
