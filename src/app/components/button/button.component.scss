@@ -1,0 +1,17 @@
+@import "@variables";
+
+a {
+  font-size: 1.1em;
+  text-decoration: none;
+  border: 1px solid $colorLine-link;
+  padding: 12px;
+  background-color: $colorLine-link;
+  color: $font-global;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease all;
+
+  &:hover {
+    background-color: #019943;
+  }
+}
