@@ -36,15 +36,15 @@ export class SectionServicosComponent {
     },
     {
       icon: 'security',
-      title: 'Sistema Segurança',
+      title: 'Segurança',
       paragraph:
-        'Serviços de sistema de segurança, com qualidade, confiabilidade e eficiência para proteção completa de seu patrimônio.',
+        'Serviços de segurança com qualidade, confiabilidade e eficiência para proteção completa do seu patrimônio.',
     },
     {
       icon: 'settings_backup_restore',
       title: 'Recuperação',
       paragraph:
-        'Serviços de recuperação, com excelência, confiabilidade e eficácia para restaurar e manter seu patrimônio.',
+        'Serviços de recuperação com excelência, confiabilidade e eficácia para restaurar seu patrimônio.',
     },
   ];
 }
