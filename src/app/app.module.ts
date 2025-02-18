@@ -10,6 +10,7 @@ import { SectionSobreComponent } from './sections/section-sobre/section-sobre.co
 import { SectionValoresComponent } from './sections/section-valores/section-valores.component';
 import { SectionWelcomeComponent } from './sections/section-welcome/section-welcome.component';
 import { ButtonComponent } from './components/button/button.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ButtonComponent } from './components/button/button.component';
     SectionValoresComponent,
     SectionWelcomeComponent,
     ButtonComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

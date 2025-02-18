@@ -1,0 +1,14 @@
+<header>
+  <div class="logoHeader">
+    <img src="assets/Nexora.svg" alt="nexoraSvg" />
+  </div>
+  <nav class="navegationHeader">
+    <ul>
+      <li *ngFor="let link of links">
+        <a [routerLink]="link.url"> {{ link.label }}</a>
+      </li>
+    </ul>
+  </nav>
+
+  <app-button text="Fale Conosco" link="/"></app-button>
+</header>
