@@ -18,12 +18,12 @@ export class HeaderComponent {
 
   // Lista para os Links
   links: Array<Link> = [
-    { label: 'Home', url: '/home' },
-    { label: 'Valores', url: '/valores' },
-    { label: 'Sobre', url: '/sobre' },
-    { label: 'Serviços', url: '/servicos' },
-    { label: 'Clientes', url: '/clientes' },
-    { label: 'Contatos', url: '/contatos' },
+    { label: 'Home', url: 'welcome' },
+    { label: 'Valores', url: 'valores' },
+    { label: 'Sobre', url: 'sobre' },
+    { label: 'Serviços', url: 'servicos' },
+    { label: 'Clientes', url: 'clientes' },
+    { label: 'Contatos', url: 'contatos' },
   ];
 
   // Metódo para emitir o evento com o nome da seção
