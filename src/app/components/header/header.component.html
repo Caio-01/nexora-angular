@@ -5,7 +5,9 @@
   <nav class="navegationHeader">
     <ul>
       <li *ngFor="let link of links">
-        <a [routerLink]="link.url"> {{ link.label }}</a>
+        <a href="javascript:void(0)" (click)="onScrollToSection(link.url)">
+          {{ link.label }}</a
+        >
       </li>
     </ul>
   </nav>

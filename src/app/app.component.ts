@@ -7,6 +7,7 @@ import { gsap } from 'gsap';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
+  constructor() {}
   title = 'landing-page';
 
   // @ViewChild('box', { static: true })
@@ -19,4 +20,8 @@ export class AppComponent {
   //     { opacity: 1, duration: 5 }
   //   );
   // }
+
+  scrollToSection(id: string) {
+    console.log('Teste de Clique', id);
+  }
 }
