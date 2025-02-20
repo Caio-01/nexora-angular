@@ -35,5 +35,30 @@ header {
         }
       }
     }
+
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  .btnGlobal {
+    @media screen and (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  .menuBurger {
+    color: $font-global;
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    span {
+      font-size: 2em;
+      cursor: pointer;
+    }
+    @media screen and (min-width: 850px) {
+      display: none;
+    }
   }
 }

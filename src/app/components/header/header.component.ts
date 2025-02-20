@@ -30,4 +30,8 @@ export class HeaderComponent {
   onScrollToSection(id: string) {
     this.scrollTo.emit(id);
   }
+
+  openMenuBurger() {
+    console.log('clicou');
+  }
 }
