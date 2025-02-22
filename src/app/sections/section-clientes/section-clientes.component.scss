@@ -9,9 +9,7 @@ main {
   align-items: center;
   gap: 2em;
   position: relative;
-  @media screen and (max-width: 1550px) {
-    justify-content: center;
-  }
+  padding-top: 4.5em;
 
   .logos {
     overflow: hidden;
