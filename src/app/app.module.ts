@@ -11,6 +11,7 @@ import { SectionValoresComponent } from './sections/section-valores/section-valo
 import { SectionWelcomeComponent } from './sections/section-welcome/section-welcome.component';
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { HeaderComponent } from './components/header/header.component';
     ButtonComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

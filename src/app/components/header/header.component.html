@@ -1,8 +1,34 @@
-<header>
-  <div class="logoHeader">
-    <img src="assets/Nexora.svg" alt="nexoraSvg" />
-  </div>
-  <nav class="navegationHeader">
+<main>
+  <header>
+    <div class="logoHeader">
+      <img src="assets/Nexora.svg" alt="nexoraSvg" />
+    </div>
+    <nav class="navegationHeader">
+      <ul>
+        <li *ngFor="let link of links">
+          <a href="javascript:void(0)" (click)="onScrollToSection(link.url)">
+            {{ link.label }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <app-button class="btnGlobal" text="Fale Conosco" link="/"></app-button>
+
+    <div class="menuBurger">
+      <span (click)="onClickMenuBurger()" class="material-symbols-outlined">
+        menu
+      </span>
+    </div>
+  </header>
+
+  <nav
+    class="navegationMobile"
+    [@menuAnimation]="openModalNav ? 'open' : 'closed'"
+  >
+    <div class="svgNavMobile">
+      <img src="assets/arrowNavMobile.svg" alt="arrowNavMobile" />
+    </div>
     <ul>
       <li *ngFor="let link of links">
         <a href="javascript:void(0)" (click)="onScrollToSection(link.url)">
@@ -11,12 +37,4 @@
       </li>
     </ul>
   </nav>
-
-  <app-button class="btnGlobal" text="Fale Conosco" link="/"></app-button>
-
-  <div class="menuBurger">
-    <span (click)="openMenuBurger()" class="material-symbols-outlined">
-      menu
-    </span>
-  </div>
-</header>
+</main>
