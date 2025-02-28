@@ -53,6 +53,7 @@ export class HeaderComponent {
   // Metódo para emitir o evento com o nome da seção
   onScrollToSection(id: string) {
     this.scrollTo.emit(id);
+    this.openModalNav = false;
   }
 
   // Metódo para clicar e abrir menu em tela mobile

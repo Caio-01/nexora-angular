@@ -13,7 +13,7 @@
       </ul>
     </nav>
 
-    <app-button class="btnGlobal" text="Fale Conosco" link="/"></app-button>
+    <app-button class="btnGlobal" text="Fale Conosco" link="#"></app-button>
 
     <div class="menuBurger">
       <span (click)="onClickMenuBurger()" class="material-symbols-outlined">
@@ -22,6 +22,7 @@
     </div>
   </header>
 
+  <!-- NavBar Mobile -->
   <nav
     class="navegationMobile"
     [@menuAnimation]="openModalNav ? 'open' : 'closed'"
