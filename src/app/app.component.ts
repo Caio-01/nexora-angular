@@ -14,6 +14,7 @@ export class AppComponent {
   @ViewChild('sobre', { read: ElementRef }) sobre!: ElementRef;
   @ViewChild('servicos', { read: ElementRef }) servicos!: ElementRef;
   @ViewChild('clientes', { read: ElementRef }) clientes!: ElementRef;
+  @ViewChild('contatos', { read: ElementRef }) contatos!: ElementRef;
 
   // @ViewChild('box', { static: true })
   // box!: ElementRef<HTMLDivElement>;
@@ -56,6 +57,9 @@ export class AppComponent {
         break;
       case 'clientes':
         element = this.clientes;
+        break;
+      case 'contatos':
+        element = this.contatos;
         break;
     }
 

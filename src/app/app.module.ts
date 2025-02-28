@@ -12,6 +12,7 @@ import { SectionWelcomeComponent } from './sections/section-welcome/section-welc
 import { ButtonComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SectionContatosComponent } from './sections/section-contatos/section-contatos.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SectionWelcomeComponent,
     ButtonComponent,
     HeaderComponent,
+    SectionContatosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
