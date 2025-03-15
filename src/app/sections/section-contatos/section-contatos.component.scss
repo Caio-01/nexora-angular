@@ -1,3 +1,118 @@
 @import "@variables";
 
+main {
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
+  .svgContatos {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+    content: "";
+    max-width: 600px;
+    top: 2em;
+    right: 1px;
+  }
+
+  .containerContatos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+    gap: 10em;
+
+    .svgContainerContatos {
+      width: 500px;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      .cardSvgContatos {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+        height: 80px;
+
+        img {
+          width: 5em;
+        }
+        .textCardContatos {
+          height: 100%;
+          width: 100%;
+          border-bottom: 2px solid #d8d8d8;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          gap: 0.1em;
+          h1 {
+            font-size: 2.4em;
+          }
+          p {
+            padding-left: 2px;
+            font-size: 1.1em;
+            color: $color-text;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .formContatos {
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 1.5em;
+
+      .emailSendContatos {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1em;
+
+        input {
+          padding: 0.5em;
+          width: 320px;
+          border-radius: 4px;
+          border: 1px solid #888888;
+          font-size: 1em;
+          cursor: auto;
+          transition: all 0.3s ease;
+          &:focus {
+            outline: none;
+            border-color: #5f5f5f;
+            box-shadow: 0px 0px 2px (#4e4e4e83);
+          }
+        }
+        .btnContatos {
+          font-size: 1em;
+          border: 1px solid $colorLine-link;
+          padding: 8px;
+          background-color: $colorLine-link;
+          color: $font-global;
+          border-radius: 4px;
+          font-weight: 500;
+          cursor: pointer;
+          transition: 0.3s ease all;
+          &:hover {
+            background-color: #019943;
+          }
+        }
+      }
+    }
+  }
+}

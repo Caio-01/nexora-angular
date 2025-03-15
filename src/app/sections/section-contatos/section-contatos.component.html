@@ -2,11 +2,12 @@
   <app-title-sections title="Fale Conosco"></app-title-sections>
 
   <div class="containerContatos">
-    <div *ngFor="let cardContato of cardContatos" class="svgContainerContatos">
-      <div class="cardSvgContatos">
+    <div class="svgContainerContatos">
+      <div *ngFor="let cardContato of cardContatos" class="cardSvgContatos">
         <img [src]="cardContato.img" [alt]="cardContato.imgAlt" />
         <div class="textCardContatos">
-          <h2>{{ cardContato.text }}</h2>
+          <h1>{{ cardContato.title }}</h1>
+          <p>{{ cardContato.text }}</p>
         </div>
       </div>
     </div>
@@ -15,17 +16,44 @@
       [formGroup]="contatosForm"
       (ngSubmit)="submitEmail()"
     >
-      <div class="textSendContatos">
-        <label for="email">Email</label>
+      <h1>Informe seu e-mail:</h1>
+      <div class="emailSendContatos">
         <input
           type="email"
           name="email"
           placeholder="Digite o seu email"
           formControlName="email"
         />
+        <button class="btnContatos" type="submit">Enviar</button>
       </div>
-
-      <button class="btnContatos" type="submit">Enviar</button>
     </form>
   </div>
+  <!--?xml version="1.0" standalone="no"?-->
+  <svg
+    class="svgContatos"
+    id="sw-js-blob-svg"
+    viewBox="0 0 100 100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+        <stop id="stop1" stop-color="rgba(242, 242, 242, 1)" offset="0%"></stop>
+        <stop
+          id="stop2"
+          stop-color="rgba(242, 242, 242, 1)"
+          offset="100%"
+        ></stop>
+      </linearGradient>
+    </defs>
+    <path
+      fill="url(#sw-gradient)"
+      d="M14.9,-19C20.2,-13.2,26.3,-9.5,29.7,-3.3C33.2,2.9,34,11.5,30.8,18.5C27.7,25.5,20.4,30.8,12,34.5C3.6,38.3,-6,40.4,-11,36.1C-16,31.7,-16.5,20.7,-21.8,12.3C-27,3.8,-37,-2.3,-38.7,-9.3C-40.4,-16.3,-33.8,-24.3,-25.9,-29.7C-18.1,-35.1,-9,-37.9,-2.1,-35.3C4.7,-32.8,9.5,-24.9,14.9,-19Z"
+      width="100%"
+      height="100%"
+      transform="translate(50 50)"
+      stroke-width="0"
+      style="transition: 0.3s"
+      stroke="url(#sw-gradient)"
+    ></path>
+  </svg>
 </main>

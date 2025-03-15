@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 interface CardContatos {
   img: string;
   imgAlt: string;
+  title: string;
   text: string;
 }
 @Component({
@@ -20,17 +21,20 @@ export class SectionContatosComponent implements OnInit {
     {
       img: 'assets/WhatsApp.svg',
       imgAlt: 'WhatsApp.svg',
-      text: 'WhatsApp',
+      title: 'WhatsApp',
+      text: 'Comunicação Rápida',
     },
     {
       img: 'assets/Instagram.svg',
       imgAlt: 'Instagram.svg',
-      text: 'Instagram',
+      title: 'Instagram',
+      text: 'Imagem e Estilo',
     },
     {
       img: 'assets/LinkedIn.svg',
       imgAlt: 'LinkedIn.svg',
-      text: 'LinkedIn',
+      title: 'LinkedIn',
+      text: 'Rede Profissional',
     },
   ];
 
