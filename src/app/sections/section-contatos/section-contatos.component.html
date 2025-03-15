@@ -1,4 +1,31 @@
 <main>
   <app-title-sections title="Fale Conosco"></app-title-sections>
-  <form></form>
+
+  <div class="containerContatos">
+    <div *ngFor="let cardContato of cardContatos" class="svgContainerContatos">
+      <div class="cardSvgContatos">
+        <img [src]="cardContato.img" [alt]="cardContato.imgAlt" />
+        <div class="textCardContatos">
+          <h2>{{ cardContato.text }}</h2>
+        </div>
+      </div>
+    </div>
+    <form
+      class="formContatos"
+      [formGroup]="contatosForm"
+      (ngSubmit)="submitEmail()"
+    >
+      <div class="textSendContatos">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Digite o seu email"
+          formControlName="email"
+        />
+      </div>
+
+      <button class="btnContatos" type="submit">Enviar</button>
+    </form>
+  </div>
 </main>
