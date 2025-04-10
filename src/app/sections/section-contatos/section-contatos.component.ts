@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 
 // Interface para tipar os Cards de Contatos
 interface CardContatos {
@@ -14,7 +15,7 @@ interface CardContatos {
   styleUrl: './section-contatos.component.scss',
 })
 export class SectionContatosComponent implements OnInit {
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
   // Lista de objetos 'CardContatos'
   cardContatos: Array<CardContatos> = [
@@ -51,7 +52,7 @@ export class SectionContatosComponent implements OnInit {
 
   // Funcão chamada para enviar o formulario
   submitEmail() {
-    alert('Enviado com Sucesso, Breve entraremos em contato!');
+    this.toastr.success('Breve entraremos em contato!', 'Enviado com Sucesso!');
     this.contatosForm.reset();
   }
 }
