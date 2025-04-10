@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionContatosComponent } from './sections/section-contatos/section-contatos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ToastrModule } from 'ngx-toastr';
     ButtonComponent,
     HeaderComponent,
     SectionContatosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
