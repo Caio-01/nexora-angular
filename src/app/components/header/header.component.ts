@@ -38,6 +38,7 @@ export class HeaderComponent {
 
   constructor(private elementRef: ElementRef) {}
 
+  // Propriedade para indicar se o modal de navegação está aberto
   openModalNav: boolean = false;
 
   // Lista para os Links
