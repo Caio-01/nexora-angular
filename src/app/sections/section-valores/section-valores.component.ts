@@ -41,11 +41,12 @@ export class SectionValoresComponent implements AfterViewInit {
         y: 0,
         duration: 0.5,
         stagger: 0.15,
+        ease: 'power4.out',
         scrollTrigger: {
           trigger: '.containerCardValores',
           start: 'top 80%',
           toggleActions: 'play reverse play reverse',
-          markers: true,
+          // markers: true,
         },
       }
     );
