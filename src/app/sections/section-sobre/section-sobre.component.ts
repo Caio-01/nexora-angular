@@ -71,6 +71,26 @@ export class SectionSobreComponent implements AfterViewInit {
         toggleActions: 'play reverse play reverse',
       },
     });
+
+    gsap.fromTo(
+      this.containerTextAbout.nativeElement,
+      {
+        opacity: 0,
+        y: '10%',
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power4.out',
+        scrollTrigger: {
+          trigger: '.aboutContainer',
+          start: 'top 60%',
+          markers: true,
+          toggleActions: 'play reverse play reverse',
+        },
+      }
+    );
   }
 
   // Lista de Icons
