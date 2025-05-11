@@ -72,6 +72,7 @@ export class SectionSobreComponent implements AfterViewInit {
       },
     });
 
+    // svg containerTextAbout
     gsap.fromTo(
       this.containerTextAbout.nativeElement,
       {
