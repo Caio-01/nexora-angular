@@ -87,7 +87,7 @@ export class SectionSobreComponent implements AfterViewInit {
         scrollTrigger: {
           trigger: '.aboutContainer',
           start: 'top 60%',
-          markers: true,
+          //markers: true,
           toggleActions: 'play reverse play reverse',
         },
       }
