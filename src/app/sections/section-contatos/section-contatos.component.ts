@@ -27,6 +27,7 @@ export class SectionContatosComponent implements OnInit, AfterViewInit {
   constructor(private fb: FormBuilder, private toastr: ToastrService) {}
 
   @ViewChild('containerContatos') containerContatos!: ElementRef;
+  @ViewChild('titleContatos') titleContatos!: ElementRef;
 
   // Lista de objetos 'CardContatos'
   cardContatos: Array<CardContatos> = [
@@ -63,6 +64,25 @@ export class SectionContatosComponent implements OnInit, AfterViewInit {
 
   // Método para inicializar a animacao do GSAP
   ngAfterViewInit(): void {
+    gsap.fromTo(
+      this.titleContatos.nativeElement,
+      {
+        opacity: 0,
+        y: '10%',
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power4.out',
+        scrollTrigger: {
+          trigger: this.titleContatos.nativeElement,
+          start: 'top 70%',
+          toggleActions: 'play reverse play reverse',
+          //markers: true,
+        },
+      }
+    );
     gsap.fromTo(
       this.containerContatos.nativeElement,
       {
