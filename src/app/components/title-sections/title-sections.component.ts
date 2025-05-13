@@ -37,7 +37,7 @@ export class TitleSectionsComponent implements AfterViewInit {
         ease: 'power4.out',
         scrollTrigger: {
           trigger: this.titleComponent.nativeElement,
-          start: 'top 60%',
+          start: 'top 70%',
           toggleActions: 'play reverse play reverse',
           //markers: true,
         },
