@@ -1,7 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
 // Interface para tipar os Cards de Contatos
 interface CardContatos {
   img: string;
@@ -14,8 +23,10 @@ interface CardContatos {
   templateUrl: './section-contatos.component.html',
   styleUrl: './section-contatos.component.scss',
 })
-export class SectionContatosComponent implements OnInit {
+export class SectionContatosComponent implements OnInit, AfterViewInit {
   constructor(private fb: FormBuilder, private toastr: ToastrService) {}
+
+  @ViewChild('containerContatos') containerContatos!: ElementRef;
 
   // Lista de objetos 'CardContatos'
   cardContatos: Array<CardContatos> = [
@@ -48,6 +59,29 @@ export class SectionContatosComponent implements OnInit {
     this.contatosForm = this.fb.group({
       email: ['', [Validators.email]],
     });
+  }
+
+  // Método para inicializar a animacao do GSAP
+  ngAfterViewInit(): void {
+    gsap.fromTo(
+      this.containerContatos.nativeElement,
+      {
+        opacity: 0,
+        y: '10%',
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power4.out',
+        scrollTrigger: {
+          trigger: '.containerContatos',
+          start: 'top 70%',
+          //markers: true,
+          toggleActions: 'play reverse play reverse',
+        },
+      }
+    );
   }
 
   // Funcão chamada para enviar o formulario
