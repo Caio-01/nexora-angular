@@ -1,27 +1,51 @@
-# LandingPage
+# Nexora Construções 💻🏗️
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Este projeto é uma **Landing Page** desenvolvida com o objetivo de praticar e consolidar conhecimentos no ecossistema Angular. A proposta foi criar um site responsivo, com transições suaves e animações modernas, utilizando boas práticas de desenvolvimento e recursos avançados das tecnologias usadas
 
-## Development server
+## 🛠️ Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular](https://angular.io/) **v18.2.0**
+- [TypeScript](https://www.typescriptlang.org/)
+- [Sass (SCSS)](https://sass-lang.com/)
+- [GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)
 
-## Code scaffolding
+## 🧠 Conceitos Aplicados
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `*ngFor` e `*ngIf` para renderização condicional e de listas
+- `@ViewChild` e `@ViewChildren` para manipulação de elementos do DOM
+- `ngAfterViewInit()` para inicialização de animações após carregamento do DOM
+- Formulários reativos com `FormBuilder` e `Validators`
+- Organização por componentes reutilizáveis (`app-title-sections`, por exemplo)
+- Integração com GSAP e ScrollTrigger para animações baseadas no scroll
+- Responsividade com Media Queries via SCSS
 
-## Build
+## 📚 Seções Principais do Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O projeto está dividido nas seguintes seções/componentes principais:
 
-## Running unit tests
+- **Welcome** — Introdução e boas-vindas
+- **Valores** — Apresentação dos valores da empresa ou marca
+- **Serviços** — Detalhes sobre os serviços oferecidos
+- **Clientes** — Área dedicada aos clientes
+- **Sobre** — Informações sobre a empresa ou equipe
+- **Contatos** — Formulário e informações para contato
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🔧 Instruções de Uso
 
-## Running end-to-end tests
+1. Clone o repositório:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    ```bash
+    git clone https://github.com/seu-usuario/nexora-angular.git
+    ```
 
-## Further help
+2. Instale as dependências:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+    ```
+
+3. Rode a aplicação:
+
+    ```bash
+    ng serve
+    ```
