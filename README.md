@@ -2,6 +2,8 @@
 
 Este projeto é uma **Landing Page** desenvolvida com o objetivo de praticar e consolidar conhecimentos no ecossistema Angular. A proposta foi criar um site responsivo, com transições suaves e animações modernas, utilizando boas práticas de desenvolvimento e recursos avançados das tecnologias usadas
 
+Deploy: [Clique aqui](https://nexora-construcoes.vercel.app/)
+
 ## 🛠️ Tecnologias Utilizadas
 
 - [Angular](https://angular.io/) **v18.2.0**
