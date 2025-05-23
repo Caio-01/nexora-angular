@@ -23,9 +23,9 @@ export class SectionSobreComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     // Title h1
-    gsap.to(this.title.nativeElement, {
-      opacity: 1,
-      right: '2em',
+    gsap.from(this.title.nativeElement, {
+      opacity: 0,
+      right: '.5em',
       duration: 0.6,
       ease: 'power4.out',
       scrollTrigger: {
