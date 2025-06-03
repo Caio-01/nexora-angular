@@ -4,6 +4,8 @@ Este projeto é uma **Landing Page** desenvolvida com o objetivo de praticar e c
 
 Deploy: [Clique aqui](https://nexora-construcoes.vercel.app/)
 
+![Imagem Projeto](./src/assets/img-proj.png)
+
 ## 🛠️ Tecnologias Utilizadas
 
 - [Angular](https://angular.io/) **v18.2.0**
