@@ -25,7 +25,6 @@ main {
       @media screen and (max-width: 670px) {
         width: 85px;
       }
-      
     }
 
     .navegationHeader {
@@ -67,9 +66,13 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
-      span {
+  
+      button {
         font-size: 2em;
         cursor: pointer;
+        background-color: transparent;
+        border: transparent;
+        color: $font-global;
       }
       @media screen and (min-width: 850px) {
         display: none;
